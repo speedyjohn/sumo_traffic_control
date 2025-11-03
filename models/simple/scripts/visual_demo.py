@@ -93,7 +93,7 @@ def demo_with_ai(scenario=f"{PROJECT_ROOT}/models/simple/xmls/simple.rou.xml", d
         print("Запусти обучение: python green_corridor.py --mode train --steps 100000")
         return None
 
-    from green_corridor import TrafficEnv
+    from .green_corridor import TrafficEnv
 
     env = TrafficEnv(f"{PROJECT_ROOT}/models/simple/xmls/simple.sumocfg", gui=True, route_file=scenario)
     obs, _ = env.reset()
@@ -219,7 +219,7 @@ def quick_visual_test():
         print("Запусти: python green_corridor.py --mode train --steps 100000")
         return
 
-    from green_corridor import TrafficEnv
+    from .green_corridor import TrafficEnv
 
     env = TrafficEnv("simple.sumocfg", gui=True, route_file="../xmls/simple.rou.xml")
     obs, _ = env.reset()

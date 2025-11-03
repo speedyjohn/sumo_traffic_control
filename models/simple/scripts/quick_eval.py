@@ -2,7 +2,7 @@ import os
 import sys
 import numpy as np
 from stable_baselines3 import DQN
-from green_corridor import TrafficEnv
+from .green_corridor import TrafficEnv
 from models.simple.scripts import PROJECT_ROOT
 
 if 'SUMO_HOME' in os.environ:
@@ -28,7 +28,7 @@ def evaluate_agent(agent_type="trained", n_episodes=5):
             print("   python green_corridor.py --mode train --steps 50000")
             return None
 
-    env = TrafficEnv("simple.sumocfg", gui=False, route_file="../xmls/simple.rou.xml")
+    env = TrafficEnv(f"{PROJECT_ROOT}/models/simple/xmls/simple.sumocfg", gui=False, route_file="../xmls/simple.rou.xml")
 
     all_rewards = []
     all_bus_waiting = []

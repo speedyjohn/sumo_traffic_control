@@ -79,7 +79,7 @@ def run_with_ai(route_file, model_path, steps=300):
     model = DQN.load(model_path)
 
     # Импортируем среду
-    from green_corridor import TrafficEnv
+    from .green_corridor import TrafficEnv
 
     env = TrafficEnv(f"{PROJECT_ROOT}/models/simple/xmls/simple.sumocfg", gui=False, route_file=route_file)
     obs, _ = env.reset()

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edges xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/edges_file.xsd">
+
+    <!-- ГОРИЗОНТАЛЬНЫЕ ДОРОГИ (запад-восток) -->
+
+    <!-- Верхний ряд (y=200) -->
+    <edge id="h_00_in" from="n_west_0" to="tl_00" numLanes="2" speed="13.89"/>
+    <edge id="h_00_01" from="tl_00" to="tl_01" numLanes="2" speed="13.89"/>
+    <edge id="h_01_02" from="tl_01" to="tl_02" numLanes="2" speed="13.89"/>
+    <edge id="h_02_out" from="tl_02" to="n_east_0" numLanes="2" speed="13.89"/>
+
+    <!-- Средний ряд (y=0) -->
+    <edge id="h_10_in" from="n_west_1" to="tl_10" numLanes="2" speed="13.89"/>
+    <edge id="h_10_11" from="tl_10" to="tl_11" numLanes="2" speed="13.89"/>
+    <edge id="h_11_12" from="tl_11" to="tl_12" numLanes="2" speed="13.89"/>
+    <edge id="h_12_out" from="tl_12" to="n_east_1" numLanes="2" speed="13.89"/>
+
+    <!-- Нижний ряд (y=-200) -->
+    <edge id="h_20_in" from="n_west_2" to="tl_20" numLanes="2" speed="13.89"/>
+    <edge id="h_20_21" from="tl_20" to="tl_21" numLanes="2" speed="13.89"/>
+    <edge id="h_21_22" from="tl_21" to="tl_22" numLanes="2" speed="13.89"/>
+    <edge id="h_22_out" from="tl_22" to="n_east_2" numLanes="2" speed="13.89"/>
+
+    <!-- ГОРИЗОНТАЛЬНЫЕ ДОРОГИ (восток-запад) - обратное направление -->
+
+    <!-- Верхний ряд -->
+    <edge id="h_02_01" from="tl_02" to="tl_01" numLanes="2" speed="13.89"/>
+    <edge id="h_01_00" from="tl_01" to="tl_00" numLanes="2" speed="13.89"/>
+    <edge id="h_00_out" from="tl_00" to="n_west_0" numLanes="2" speed="13.89"/>
+    <edge id="h_02_in" from="n_east_0" to="tl_02" numLanes="2" speed="13.89"/>
+
+    <!-- Средний ряд -->
+    <edge id="h_12_11" from="tl_12" to="tl_11" numLanes="2" speed="13.89"/>
+    <edge id="h_11_10" from="tl_11" to="tl_10" numLanes="2" speed="13.89"/>
+    <edge id="h_10_out" from="tl_10" to="n_west_1" numLanes="2" speed="13.89"/>
+    <edge id="h_12_in" from="n_east_1" to="tl_12" numLanes="2" speed="13.89"/>
+
+    <!-- Нижний ряд -->
+    <edge id="h_22_21" from="tl_22" to="tl_21" numLanes="2" speed="13.89"/>
+    <edge id="h_21_20" from="tl_21" to="tl_20" numLanes="2" speed="13.89"/>
+    <edge id="h_20_out" from="tl_20" to="n_west_2" numLanes="2" speed="13.89"/>
+    <edge id="h_22_in" from="n_east_2" to="tl_22" numLanes="2" speed="13.89"/>
+
+    <!-- ВЕРТИКАЛЬНЫЕ ДОРОГИ (север-юг) -->
+
+    <!-- Левая колонка (x=-200) -->
+    <edge id="v_00_in" from="n_north_0" to="tl_00" numLanes="2" speed="13.89"/>
+    <edge id="v_00_10" from="tl_00" to="tl_10" numLanes="2" speed="13.89"/>
+    <edge id="v_10_20" from="tl_10" to="tl_20" numLanes="2" speed="13.89"/>
+    <edge id="v_20_out" from="tl_20" to="n_south_0" numLanes="2" speed="13.89"/>
+
+    <!-- Средняя колонка (x=0) -->
+    <edge id="v_01_in" from="n_north_1" to="tl_01" numLanes="2" speed="13.89"/>
+    <edge id="v_01_11" from="tl_01" to="tl_11" numLanes="2" speed="13.89"/>
+    <edge id="v_11_21" from="tl_11" to="tl_21" numLanes="2" speed="13.89"/>
+    <edge id="v_21_out" from="tl_21" to="n_south_1" numLanes="2" speed="13.89"/>
+
+    <!-- Правая колонка (x=200) -->
+    <edge id="v_02_in" from="n_north_2" to="tl_02" numLanes="2" speed="13.89"/>
+    <edge id="v_02_12" from="tl_02" to="tl_12" numLanes="2" speed="13.89"/>
+    <edge id="v_12_22" from="tl_12" to="tl_22" numLanes="2" speed="13.89"/>
+    <edge id="v_22_out" from="tl_22" to="n_south_2" numLanes="2" speed="13.89"/>
+
+    <!-- ВЕРТИКАЛЬНЫЕ ДОРОГИ (юг-север) - обратное направление -->
+
+    <!-- Левая колонка -->
+    <edge id="v_20_10" from="tl_20" to="tl_10" numLanes="2" speed="13.89"/>
+    <edge id="v_10_00" from="tl_10" to="tl_00" numLanes="2" speed="13.89"/>
+    <edge id="v_00_out" from="tl_00" to="n_north_0" numLanes="2" speed="13.89"/>
+    <edge id="v_20_in" from="n_south_0" to="tl_20" numLanes="2" speed="13.89"/>
+
+    <!-- Средняя колонка -->
+    <edge id="v_21_11" from="tl_21" to="tl_11" numLanes="2" speed="13.89"/>
+    <edge id="v_11_01" from="tl_11" to="tl_01" numLanes="2" speed="13.89"/>
+    <edge id="v_01_out" from="tl_01" to="n_north_1" numLanes="2" speed="13.89"/>
+    <edge id="v_21_in" from="n_south_1" to="tl_21" numLanes="2" speed="13.89"/>
+
+    <!-- Правая колонка -->
+    <edge id="v_22_12" from="tl_22" to="tl_12" numLanes="2" speed="13.89"/>
+    <edge id="v_12_02" from="tl_12" to="tl_02" numLanes="2" speed="13.89"/>
+    <edge id="v_02_out" from="tl_02" to="n_north_2" numLanes="2" speed="13.89"/>
+    <edge id="v_22_in" from="n_south_2" to="tl_22" numLanes="2" speed="13.89"/>
+
+</edges>

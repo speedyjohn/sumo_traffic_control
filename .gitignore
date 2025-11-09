@@ -1,4 +1,5 @@
 .idea/
 __pycache__/
-*.pycS
+*.pyc
 *.zip
+guide.md

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/nodes_file.xsd">
+
+    <!-- Сетка 3x3 перекрестков (как реальный городской квартал) -->
+
+    <!-- Ряд 1 (север) -->
+    <node id="tl_00" x="-200.0" y="200.0" type="traffic_light"/>
+    <node id="tl_01" x="0.0" y="200.0" type="traffic_light"/>
+    <node id="tl_02" x="200.0" y="200.0" type="traffic_light"/>
+
+    <!-- Ряд 2 (центр) -->
+    <node id="tl_10" x="-200.0" y="0.0" type="traffic_light"/>
+    <node id="tl_11" x="0.0" y="0.0" type="traffic_light"/>
+    <node id="tl_12" x="200.0" y="0.0" type="traffic_light"/>
+
+    <!-- Ряд 3 (юг) -->
+    <node id="tl_20" x="-200.0" y="-200.0" type="traffic_light"/>
+    <node id="tl_21" x="0.0" y="-200.0" type="traffic_light"/>
+    <node id="tl_22" x="200.0" y="-200.0" type="traffic_light"/>
+
+    <!-- Внешние границы сети (въезды/выезды) -->
+
+    <!-- Северные границы -->
+    <node id="n_north_0" x="-200.0" y="400.0" type="priority"/>
+    <node id="n_north_1" x="0.0" y="400.0" type="priority"/>
+    <node id="n_north_2" x="200.0" y="400.0" type="priority"/>
+
+    <!-- Южные границы -->
+    <node id="n_south_0" x="-200.0" y="-400.0" type="priority"/>
+    <node id="n_south_1" x="0.0" y="-400.0" type="priority"/>
+    <node id="n_south_2" x="200.0" y="-400.0" type="priority"/>
+
+    <!-- Западные границы -->
+    <node id="n_west_0" x="-400.0" y="200.0" type="priority"/>
+    <node id="n_west_1" x="-400.0" y="0.0" type="priority"/>
+    <node id="n_west_2" x="-400.0" y="-200.0" type="priority"/>
+
+    <!-- Восточные границы -->
+    <node id="n_east_0" x="400.0" y="200.0" type="priority"/>
+    <node id="n_east_1" x="400.0" y="0.0" type="priority"/>
+    <node id="n_east_2" x="400.0" y="-200.0" type="priority"/>
+
+</nodes>

@@ -1,0 +1,181 @@
+<?xml version="1.0" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="car" vClass="passenger" color="1,1,0" speedDev="0.1"/>
+    <vType id="bus" vClass="bus" color="0,1,0" length="12" width="2.5" speedDev="0.05"/>
+    <route id="route_h_west_east_0" edges="h_00_in h_00_01 h_01_02 h_02_out"/>
+    <route id="route_h_west_east_1" edges="h_10_in h_10_11 h_11_12 h_12_out"/>
+    <route id="route_h_west_east_2" edges="h_20_in h_20_21 h_21_22 h_22_out"/>
+    <route id="route_h_east_west_0" edges="h_02_in h_02_01 h_01_00 h_00_out"/>
+    <route id="route_h_east_west_1" edges="h_12_in h_12_11 h_11_10 h_10_out"/>
+    <route id="route_h_east_west_2" edges="h_22_in h_22_21 h_21_20 h_20_out"/>
+    <route id="route_v_north_south_0" edges="v_00_in v_00_10 v_10_20 v_20_out"/>
+    <route id="route_v_north_south_1" edges="v_01_in v_01_11 v_11_21 v_21_out"/>
+    <route id="route_v_north_south_2" edges="v_02_in v_02_12 v_12_22 v_22_out"/>
+    <route id="route_v_south_north_0" edges="v_20_in v_20_10 v_10_00 v_00_out"/>
+    <route id="route_v_south_north_1" edges="v_21_in v_21_11 v_11_01 v_01_out"/>
+    <route id="route_v_south_north_2" edges="v_22_in v_22_12 v_12_02 v_02_out"/>
+    <route id="route_d_nw_se" edges="v_00_in v_00_10 h_10_11 v_11_21 h_21_22 v_22_out"/>
+    <route id="route_d_ne_sw" edges="v_02_in v_02_12 h_12_11 v_11_21 h_21_20 v_20_out"/>
+    <route id="route_d_sw_ne" edges="v_20_in v_20_10 h_10_11 v_11_01 h_01_02 v_02_out"/>
+    <route id="route_d_se_nw" edges="v_22_in v_22_12 h_12_11 v_11_01 h_01_00 v_00_out"/>
+    <flow id="cars_route_d_ne_sw" type="car" route="route_d_ne_sw" begin="0" end="1000" probability="0.17340289188628316"/>
+    <flow id="cars_route_d_nw_se" type="car" route="route_d_nw_se" begin="0" end="1000" probability="0.17340289188628316"/>
+    <flow id="cars_route_d_se_nw" type="car" route="route_d_se_nw" begin="0" end="1000" probability="0.17340289188628316"/>
+    <flow id="cars_route_d_sw_ne" type="car" route="route_d_sw_ne" begin="0" end="1000" probability="0.17340289188628316"/>
+    <flow id="cars_route_h_east_west_0" type="car" route="route_h_east_west_0" begin="0" end="1000" probability="0.17340289188628316"/>
+    <flow id="cars_route_h_east_west_1" type="car" route="route_h_east_west_1" begin="0" end="1000" probability="0.17340289188628316"/>
+    <flow id="cars_route_h_east_west_2" type="car" route="route_h_east_west_2" begin="0" end="1000" probability="0.17340289188628316"/>
+    <flow id="cars_route_h_west_east_0" type="car" route="route_h_west_east_0" begin="0" end="1000" probability="0.17340289188628316"/>
+    <flow id="cars_route_h_west_east_1" type="car" route="route_h_west_east_1" begin="0" end="1000" probability="0.17340289188628316"/>
+    <flow id="cars_route_h_west_east_2" type="car" route="route_h_west_east_2" begin="0" end="1000" probability="0.17340289188628316"/>
+    <flow id="cars_route_v_north_south_0" type="car" route="route_v_north_south_0" begin="0" end="1000" probability="0.17340289188628316"/>
+    <flow id="cars_route_v_north_south_1" type="car" route="route_v_north_south_1" begin="0" end="1000" probability="0.17340289188628316"/>
+    <flow id="cars_route_v_north_south_2" type="car" route="route_v_north_south_2" begin="0" end="1000" probability="0.17340289188628316"/>
+    <flow id="cars_route_v_south_north_0" type="car" route="route_v_south_north_0" begin="0" end="1000" probability="0.17340289188628316"/>
+    <flow id="cars_route_v_south_north_1" type="car" route="route_v_south_north_1" begin="0" end="1000" probability="0.17340289188628316"/>
+    <flow id="cars_route_v_south_north_2" type="car" route="route_v_south_north_2" begin="0" end="1000" probability="0.17340289188628316"/>
+    <vehicle id="bus_12" type="bus" route="route_h_west_east_1" depart="13" color="0,1,0"/>
+    <vehicle id="bus_36" type="bus" route="route_h_east_west_0" depart="15" color="0,1,0"/>
+    <vehicle id="bus_96" type="bus" route="route_v_north_south_2" depart="19" color="0,1,0"/>
+    <vehicle id="bus_108" type="bus" route="route_v_south_north_0" depart="20" color="0,1,0"/>
+    <vehicle id="bus_120" type="bus" route="route_v_south_north_1" depart="20" color="0,1,0"/>
+    <vehicle id="bus_72" type="bus" route="route_v_north_south_0" depart="21" color="0,1,0"/>
+    <vehicle id="bus_132" type="bus" route="route_v_south_north_2" depart="23" color="0,1,0"/>
+    <vehicle id="bus_0" type="bus" route="route_h_west_east_0" depart="25" color="0,1,0"/>
+    <vehicle id="bus_24" type="bus" route="route_h_west_east_2" depart="25" color="0,1,0"/>
+    <vehicle id="bus_48" type="bus" route="route_h_east_west_1" depart="26" color="0,1,0"/>
+    <vehicle id="bus_60" type="bus" route="route_h_east_west_2" depart="27" color="0,1,0"/>
+    <vehicle id="bus_84" type="bus" route="route_v_north_south_1" depart="30" color="0,1,0"/>
+    <vehicle id="bus_85" type="bus" route="route_v_north_south_1" depart="93" color="0,1,0"/>
+    <vehicle id="bus_49" type="bus" route="route_h_east_west_1" depart="97" color="0,1,0"/>
+    <vehicle id="bus_133" type="bus" route="route_v_south_north_2" depart="97" color="0,1,0"/>
+    <vehicle id="bus_109" type="bus" route="route_v_south_north_0" depart="100" color="0,1,0"/>
+    <vehicle id="bus_37" type="bus" route="route_h_east_west_0" depart="102" color="0,1,0"/>
+    <vehicle id="bus_61" type="bus" route="route_h_east_west_2" depart="102" color="0,1,0"/>
+    <vehicle id="bus_1" type="bus" route="route_h_west_east_0" depart="103" color="0,1,0"/>
+    <vehicle id="bus_73" type="bus" route="route_v_north_south_0" depart="103" color="0,1,0"/>
+    <vehicle id="bus_13" type="bus" route="route_h_west_east_1" depart="104" color="0,1,0"/>
+    <vehicle id="bus_121" type="bus" route="route_v_south_north_1" depart="104" color="0,1,0"/>
+    <vehicle id="bus_25" type="bus" route="route_h_west_east_2" depart="108" color="0,1,0"/>
+    <vehicle id="bus_97" type="bus" route="route_v_north_south_2" depart="112" color="0,1,0"/>
+    <vehicle id="bus_134" type="bus" route="route_v_south_north_2" depart="179" color="0,1,0"/>
+    <vehicle id="bus_62" type="bus" route="route_h_east_west_2" depart="180" color="0,1,0"/>
+    <vehicle id="bus_74" type="bus" route="route_v_north_south_0" depart="183" color="0,1,0"/>
+    <vehicle id="bus_86" type="bus" route="route_v_north_south_1" depart="184" color="0,1,0"/>
+    <vehicle id="bus_98" type="bus" route="route_v_north_south_2" depart="184" color="0,1,0"/>
+    <vehicle id="bus_50" type="bus" route="route_h_east_west_1" depart="187" color="0,1,0"/>
+    <vehicle id="bus_38" type="bus" route="route_h_east_west_0" depart="189" color="0,1,0"/>
+    <vehicle id="bus_2" type="bus" route="route_h_west_east_0" depart="190" color="0,1,0"/>
+    <vehicle id="bus_26" type="bus" route="route_h_west_east_2" depart="193" color="0,1,0"/>
+    <vehicle id="bus_14" type="bus" route="route_h_west_east_1" depart="194" color="0,1,0"/>
+    <vehicle id="bus_110" type="bus" route="route_v_south_north_0" depart="195" color="0,1,0"/>
+    <vehicle id="bus_122" type="bus" route="route_v_south_north_1" depart="195" color="0,1,0"/>
+    <vehicle id="bus_111" type="bus" route="route_v_south_north_0" depart="260" color="0,1,0"/>
+    <vehicle id="bus_39" type="bus" route="route_h_east_west_0" depart="261" color="0,1,0"/>
+    <vehicle id="bus_123" type="bus" route="route_v_south_north_1" depart="261" color="0,1,0"/>
+    <vehicle id="bus_99" type="bus" route="route_v_north_south_2" depart="264" color="0,1,0"/>
+    <vehicle id="bus_15" type="bus" route="route_h_west_east_1" depart="265" color="0,1,0"/>
+    <vehicle id="bus_27" type="bus" route="route_h_west_east_2" depart="267" color="0,1,0"/>
+    <vehicle id="bus_135" type="bus" route="route_v_south_north_2" depart="268" color="0,1,0"/>
+    <vehicle id="bus_87" type="bus" route="route_v_north_south_1" depart="271" color="0,1,0"/>
+    <vehicle id="bus_63" type="bus" route="route_h_east_west_2" depart="273" color="0,1,0"/>
+    <vehicle id="bus_75" type="bus" route="route_v_north_south_0" depart="274" color="0,1,0"/>
+    <vehicle id="bus_3" type="bus" route="route_h_west_east_0" depart="276" color="0,1,0"/>
+    <vehicle id="bus_51" type="bus" route="route_h_east_west_1" depart="279" color="0,1,0"/>
+    <vehicle id="bus_64" type="bus" route="route_h_east_west_2" depart="342" color="0,1,0"/>
+    <vehicle id="bus_16" type="bus" route="route_h_west_east_1" depart="343" color="0,1,0"/>
+    <vehicle id="bus_88" type="bus" route="route_v_north_south_1" depart="347" color="0,1,0"/>
+    <vehicle id="bus_124" type="bus" route="route_v_south_north_1" depart="351" color="0,1,0"/>
+    <vehicle id="bus_76" type="bus" route="route_v_north_south_0" depart="353" color="0,1,0"/>
+    <vehicle id="bus_4" type="bus" route="route_h_west_east_0" depart="355" color="0,1,0"/>
+    <vehicle id="bus_100" type="bus" route="route_v_north_south_2" depart="357" color="0,1,0"/>
+    <vehicle id="bus_112" type="bus" route="route_v_south_north_0" depart="358" color="0,1,0"/>
+    <vehicle id="bus_40" type="bus" route="route_h_east_west_0" depart="359" color="0,1,0"/>
+    <vehicle id="bus_52" type="bus" route="route_h_east_west_1" depart="359" color="0,1,0"/>
+    <vehicle id="bus_28" type="bus" route="route_h_west_east_2" depart="361" color="0,1,0"/>
+    <vehicle id="bus_136" type="bus" route="route_v_south_north_2" depart="361" color="0,1,0"/>
+    <vehicle id="bus_53" type="bus" route="route_h_east_west_1" depart="427" color="0,1,0"/>
+    <vehicle id="bus_77" type="bus" route="route_v_north_south_0" depart="429" color="0,1,0"/>
+    <vehicle id="bus_101" type="bus" route="route_v_north_south_2" depart="431" color="0,1,0"/>
+    <vehicle id="bus_125" type="bus" route="route_v_south_north_1" depart="431" color="0,1,0"/>
+    <vehicle id="bus_89" type="bus" route="route_v_north_south_1" depart="433" color="0,1,0"/>
+    <vehicle id="bus_41" type="bus" route="route_h_east_west_0" depart="436" color="0,1,0"/>
+    <vehicle id="bus_65" type="bus" route="route_h_east_west_2" depart="437" color="0,1,0"/>
+    <vehicle id="bus_113" type="bus" route="route_v_south_north_0" depart="438" color="0,1,0"/>
+    <vehicle id="bus_5" type="bus" route="route_h_west_east_0" depart="439" color="0,1,0"/>
+    <vehicle id="bus_17" type="bus" route="route_h_west_east_1" depart="442" color="0,1,0"/>
+    <vehicle id="bus_29" type="bus" route="route_h_west_east_2" depart="443" color="0,1,0"/>
+    <vehicle id="bus_137" type="bus" route="route_v_south_north_2" depart="444" color="0,1,0"/>
+    <vehicle id="bus_102" type="bus" route="route_v_north_south_2" depart="508" color="0,1,0"/>
+    <vehicle id="bus_66" type="bus" route="route_h_east_west_2" depart="510" color="0,1,0"/>
+    <vehicle id="bus_90" type="bus" route="route_v_north_south_1" depart="514" color="0,1,0"/>
+    <vehicle id="bus_54" type="bus" route="route_h_east_west_1" depart="515" color="0,1,0"/>
+    <vehicle id="bus_126" type="bus" route="route_v_south_north_1" depart="516" color="0,1,0"/>
+    <vehicle id="bus_138" type="bus" route="route_v_south_north_2" depart="516" color="0,1,0"/>
+    <vehicle id="bus_18" type="bus" route="route_h_west_east_1" depart="518" color="0,1,0"/>
+    <vehicle id="bus_42" type="bus" route="route_h_east_west_0" depart="523" color="0,1,0"/>
+    <vehicle id="bus_78" type="bus" route="route_v_north_south_0" depart="523" color="0,1,0"/>
+    <vehicle id="bus_30" type="bus" route="route_h_west_east_2" depart="526" color="0,1,0"/>
+    <vehicle id="bus_114" type="bus" route="route_v_south_north_0" depart="527" color="0,1,0"/>
+    <vehicle id="bus_6" type="bus" route="route_h_west_east_0" depart="528" color="0,1,0"/>
+    <vehicle id="bus_43" type="bus" route="route_h_east_west_0" depart="594" color="0,1,0"/>
+    <vehicle id="bus_103" type="bus" route="route_v_north_south_2" depart="596" color="0,1,0"/>
+    <vehicle id="bus_115" type="bus" route="route_v_south_north_0" depart="598" color="0,1,0"/>
+    <vehicle id="bus_7" type="bus" route="route_h_west_east_0" depart="602" color="0,1,0"/>
+    <vehicle id="bus_79" type="bus" route="route_v_north_south_0" depart="603" color="0,1,0"/>
+    <vehicle id="bus_91" type="bus" route="route_v_north_south_1" depart="603" color="0,1,0"/>
+    <vehicle id="bus_139" type="bus" route="route_v_south_north_2" depart="604" color="0,1,0"/>
+    <vehicle id="bus_31" type="bus" route="route_h_west_east_2" depart="605" color="0,1,0"/>
+    <vehicle id="bus_55" type="bus" route="route_h_east_west_1" depart="610" color="0,1,0"/>
+    <vehicle id="bus_19" type="bus" route="route_h_west_east_1" depart="611" color="0,1,0"/>
+    <vehicle id="bus_67" type="bus" route="route_h_east_west_2" depart="611" color="0,1,0"/>
+    <vehicle id="bus_127" type="bus" route="route_v_south_north_1" depart="611" color="0,1,0"/>
+    <vehicle id="bus_68" type="bus" route="route_h_east_west_2" depart="674" color="0,1,0"/>
+    <vehicle id="bus_8" type="bus" route="route_h_west_east_0" depart="676" color="0,1,0"/>
+    <vehicle id="bus_128" type="bus" route="route_v_south_north_1" depart="676" color="0,1,0"/>
+    <vehicle id="bus_116" type="bus" route="route_v_south_north_0" depart="680" color="0,1,0"/>
+    <vehicle id="bus_92" type="bus" route="route_v_north_south_1" depart="684" color="0,1,0"/>
+    <vehicle id="bus_20" type="bus" route="route_h_west_east_1" depart="685" color="0,1,0"/>
+    <vehicle id="bus_44" type="bus" route="route_h_east_west_0" depart="685" color="0,1,0"/>
+    <vehicle id="bus_56" type="bus" route="route_h_east_west_1" depart="685" color="0,1,0"/>
+    <vehicle id="bus_32" type="bus" route="route_h_west_east_2" depart="686" color="0,1,0"/>
+    <vehicle id="bus_80" type="bus" route="route_v_north_south_0" depart="688" color="0,1,0"/>
+    <vehicle id="bus_104" type="bus" route="route_v_north_south_2" depart="690" color="0,1,0"/>
+    <vehicle id="bus_140" type="bus" route="route_v_south_north_2" depart="692" color="0,1,0"/>
+    <vehicle id="bus_129" type="bus" route="route_v_south_north_1" depart="757" color="0,1,0"/>
+    <vehicle id="bus_117" type="bus" route="route_v_south_north_0" depart="761" color="0,1,0"/>
+    <vehicle id="bus_93" type="bus" route="route_v_north_south_1" depart="762" color="0,1,0"/>
+    <vehicle id="bus_141" type="bus" route="route_v_south_north_2" depart="762" color="0,1,0"/>
+    <vehicle id="bus_69" type="bus" route="route_h_east_west_2" depart="763" color="0,1,0"/>
+    <vehicle id="bus_9" type="bus" route="route_h_west_east_0" depart="764" color="0,1,0"/>
+    <vehicle id="bus_45" type="bus" route="route_h_east_west_0" depart="765" color="0,1,0"/>
+    <vehicle id="bus_81" type="bus" route="route_v_north_south_0" depart="767" color="0,1,0"/>
+    <vehicle id="bus_21" type="bus" route="route_h_west_east_1" depart="773" color="0,1,0"/>
+    <vehicle id="bus_105" type="bus" route="route_v_north_south_2" depart="774" color="0,1,0"/>
+    <vehicle id="bus_57" type="bus" route="route_h_east_west_1" depart="775" color="0,1,0"/>
+    <vehicle id="bus_33" type="bus" route="route_h_west_east_2" depart="777" color="0,1,0"/>
+    <vehicle id="bus_22" type="bus" route="route_h_west_east_1" depart="841" color="0,1,0"/>
+    <vehicle id="bus_82" type="bus" route="route_v_north_south_0" depart="842" color="0,1,0"/>
+    <vehicle id="bus_118" type="bus" route="route_v_south_north_0" depart="843" color="0,1,0"/>
+    <vehicle id="bus_130" type="bus" route="route_v_south_north_1" depart="845" color="0,1,0"/>
+    <vehicle id="bus_94" type="bus" route="route_v_north_south_1" depart="846" color="0,1,0"/>
+    <vehicle id="bus_46" type="bus" route="route_h_east_west_0" depart="849" color="0,1,0"/>
+    <vehicle id="bus_142" type="bus" route="route_v_south_north_2" depart="850" color="0,1,0"/>
+    <vehicle id="bus_58" type="bus" route="route_h_east_west_1" depart="851" color="0,1,0"/>
+    <vehicle id="bus_10" type="bus" route="route_h_west_east_0" depart="852" color="0,1,0"/>
+    <vehicle id="bus_106" type="bus" route="route_v_north_south_2" depart="852" color="0,1,0"/>
+    <vehicle id="bus_34" type="bus" route="route_h_west_east_2" depart="855" color="0,1,0"/>
+    <vehicle id="bus_70" type="bus" route="route_h_east_west_2" depart="857" color="0,1,0"/>
+    <vehicle id="bus_83" type="bus" route="route_v_north_south_0" depart="923" color="0,1,0"/>
+    <vehicle id="bus_71" type="bus" route="route_h_east_west_2" depart="925" color="0,1,0"/>
+    <vehicle id="bus_35" type="bus" route="route_h_west_east_2" depart="927" color="0,1,0"/>
+    <vehicle id="bus_143" type="bus" route="route_v_south_north_2" depart="928" color="0,1,0"/>
+    <vehicle id="bus_107" type="bus" route="route_v_north_south_2" depart="931" color="0,1,0"/>
+    <vehicle id="bus_47" type="bus" route="route_h_east_west_0" depart="933" color="0,1,0"/>
+    <vehicle id="bus_95" type="bus" route="route_v_north_south_1" depart="936" color="0,1,0"/>
+    <vehicle id="bus_59" type="bus" route="route_h_east_west_1" depart="937" color="0,1,0"/>
+    <vehicle id="bus_119" type="bus" route="route_v_south_north_0" depart="937" color="0,1,0"/>
+    <vehicle id="bus_23" type="bus" route="route_h_west_east_1" depart="939" color="0,1,0"/>
+    <vehicle id="bus_11" type="bus" route="route_h_west_east_0" depart="940" color="0,1,0"/>
+    <vehicle id="bus_131" type="bus" route="route_v_south_north_1" depart="943" color="0,1,0"/>
+</routes>
